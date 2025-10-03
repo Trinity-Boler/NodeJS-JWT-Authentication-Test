@@ -40,15 +40,15 @@
         <script>
 
             axios.interceptors.response.use(
-      response => response,
-      error => {
-        if (error.response && error.response.status === 401) {
-          localStorage.removeItem('jwt');
-          window.location.href = "/";
-        }
-        return Promise.reject(error);
-      }
-    );
+                response => response,
+                    error => {
+                        if (error.response && error.response.status === 401) {
+                        localStorage.removeItem('jwt');
+                        window.location.href = "/";
+                        }
+                        return Promise.reject(error);
+                    }
+            );
             // var token = '';
             function login() {
                 const data = {
