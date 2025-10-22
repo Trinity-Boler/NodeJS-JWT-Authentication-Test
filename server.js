@@ -96,4 +96,3 @@ app.use(function (err, req, res, next) {
 app.listen(PORT, () => {
   console.log(`Serving on port ${PORT}`);
 });
-// (path.join(__dirname is getting the  absolute path no matter what computer setup
